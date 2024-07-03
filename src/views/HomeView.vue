@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div v-if="error">{{error}}</div>
+
+    <div v-if="posts.length > 0">
+      <PostList :posts="posts"></PostList>
+    </div>
+    <div v-else>
+      Loading
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import PostList from "@/components/PostList.vue";
+import getPosts from "@/composeables/getPosts";
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    PostList
+  },
+  setup() {
+    const {posts, error, load} = getPosts()
+
+    load()
+    return {
+      error, posts
+    }
   }
 }
 </script>
