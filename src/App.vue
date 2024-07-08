@@ -1,6 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
+    <router-link :to="{name: 'home'}">Home</router-link>
+    <router-link :to="{name: 'create'}">Create</router-link>
   </nav>
   <router-view/>
 </template>
@@ -27,3 +28,5 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup lang="ts">
+</script>

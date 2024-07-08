@@ -6,7 +6,7 @@
       <PostList :posts="posts"></PostList>
     </div>
     <div v-else>
-      Loading
+      <Spinner></Spinner>
     </div>
   </div>
 </template>
@@ -14,9 +14,11 @@
 <script>
 import PostList from "@/components/PostList.vue";
 import getPosts from "@/composeables/getPosts";
+import Spinner from "@/components/Spinner.vue";
 export default {
   name: 'HomeView',
   components: {
+    Spinner,
     PostList
   },
   setup() {

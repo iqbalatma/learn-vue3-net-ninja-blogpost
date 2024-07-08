@@ -1,23 +1,37 @@
 {
-  "posts" : [
+  "posts": [
     {
-      "id" : "1",
-      "title" : "Welcome to the new blog",
-      "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.",
-      "tags" : [
+      "id": "1",
+      "title": "Welcome to the new blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.",
+      "tags": [
         "webdev",
         "coding",
         "news"
       ]
     },
     {
-      "id" : "2",
-      "title" : "Top 5 css tips",
-      "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.",
-      "tags" : [
+      "id": "2",
+      "title": "Top 5 css tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.",
+      "tags": [
         "css",
         "webdev",
         "coding"
+      ]
+    },
+    {
+      "id": "6f07",
+      "title": "Totam quos consequat",
+      "body": "Cillum porro illo ut",
+      "tags": []
+    },
+    {
+      "id": "01d4",
+      "title": "Totam quos consequat",
+      "body": "Cillum porro illo ut",
+      "tags": [
+        "Dictaesse corrupti"
       ]
     }
   ]
